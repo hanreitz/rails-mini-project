@@ -6,6 +6,23 @@ Instructions:
 * run rails s
 * go to https://localhost:3000
 
+Note:
+
+If you try to run rails s and enocunter an error regarding yarn or webpacker, make sure yarn is installed by running 
+
+yarn --version. 
+
+If yarn appears to be installed, check that all packages are up to date by running 
+
+yarn install --check-files
+
+If yarn is not installed, visit https://yarnpkg.com/en/docs/install
+
+Once yarn is installed and up-to-date, run
+
+rails webpacker:install
+
+Now you can sucessfully run rails s!
 
 ~~~~~~~~~~~~~~~~~~~
 Requirements for the Mini-Project:
