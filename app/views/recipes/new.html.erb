@@ -1,0 +1,22 @@
+<h1>New Recipe Form</h1>
+
+<%= form_for @recipe do |f| %>
+  <%= f.label "Recipe Title:" %>
+  <%= f.text_field :title %><br>
+
+  <%= f.label "Link to Recipe Image:" %>
+  <%= f.text_field :thumbnail %><br>
+
+  <%= f.label "Link to Full Recipe:" %>
+  <%= f.text_field :link %><br>
+
+  <%= f.label "Ingredients:" %><br>
+  <% @ingredients.each do |i| %>
+    <%= f.check_box :ingredients, {}, "true", "false" %>
+  <% end %><br>
+
+  <%= f.label "Add New Ingredients (comma-separated):" %><br>
+  <%= f.text_area :ingredient_list %>
+
+  <%= f.submit "Create Recipe" %>
+<% end %>
