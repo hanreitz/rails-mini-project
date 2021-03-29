@@ -1,5 +1,12 @@
 # README
 
+Instructions:
+* run bundle install
+* run rake db:seed
+* run rails s
+* go to https://localhost:3000
+
+~~~~~~~~~~~~~~~~~~~
 Requirements for the Mini-Project:
 
 Objectives
@@ -23,6 +30,7 @@ Ultra Bonus
 * Write model tests
 * Practice refactoring
 * Make it pretty with Bootstrap or Materialize (look into the Rails Asset Pipeline (Links to an external site.))
+~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~
 This README would normally document whatever steps are necessary to get the
@@ -47,4 +55,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
